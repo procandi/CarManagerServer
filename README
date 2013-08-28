@@ -1,0 +1,40 @@
+﻿伺服器端
+一、安裝ruby
+二、安裝devkit，要到安裝資料下以下指令
+ruby dk.rb init
+ruby dk.rb install
+三、安裝sinatra
+gem install sinatra
+四、安裝sqlite3
+gem install sqlite3
+五、安裝rqrcode
+gem install rqrcode
+六、安裝pony
+gem install pony
+七、安裝thin
+gem install thin
+八、執行伺服端程式
+在C:\CarManagerServer\下執行rackup -p 4567
+成果網址在:http://127.0.0.1:4567/
+九、如果要放在網路上可以連的位置，則要再加安裝localtunnel
+gem install localtunnel
+十、承上，啟動localtunnel的方式
+localtunnel -k ~/.ssh/id_rsa.pub 4567
+
+rfid客戶端
+一、安裝rfid driver
+二、接上rfid reader
+三、由裝置管理員尋找使用的port埠
+四、執行rfid客戶端程式
+
+webcam客戶端
+一、安裝ruby
+二、安裝zxing
+gem install zxing
+三、接上webcam
+四、執行webcam客戶端
+ruby -Ku C:\CarManagerWebCam\Main.rb
+
+android手機端
+一、安裝carmanagerapp.apk
+二、至手機應用程式清單尋找CarManagerApp並執行即可
